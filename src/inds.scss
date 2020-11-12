@@ -1,0 +1,408 @@
+//Colours
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #050505;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+
+
+// Reset and Layout Styles
+
+
+
+p
+
+// Basic Button Style
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $red;
+  border-radius: 0.6em;
+  color: $red;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 48px;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+
+  &:hover,
+  &:focus {
+    color: #262525;
+    outline: 0;
+  }
+}
+
+//BUTTON 1
+
+//BUTTON 3
+.third {
+  border-color:black ;
+  color: black;
+  margin-left: 48px;
+
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+  }
+}
+
+// BUTTON 4
+.fourth {
+  // background: $yellow;
+  border-color: $yellow;
+  color: #fff;
+  background: {
+    image: linear-gradient(45deg,$yellow 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
+  }
+}
+
+//BUTTON 5
+.fifth {
+  border-color: $purple;
+  // border: 0;
+  border-radius: 0;
+  color: $purple;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: $purple;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+
+  &:hover {
+    color: #302f2f;
+    &:after {
+      width: 110%;
+    }
+  }
+}
+
+//BUTTON 6
+.sixth {
+  border-radius: 3em;
+  border-color: $green;
+  color: $green;
+  background: {
+    image: linear-gradient(to bottom, transparent 50%, $green 50%);
+    position: 0% 0%;
+    size: 210%;
+  }
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-position: 0 100%;
+  }
+}
+.vert-hr {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 14px;
+    bottom: 6px;
+    left: -13.1px;
+    border-left: 1px solid #222;
+    transform: translate(-50%);
+  }
+}
+.title-dot {
+  margin-left: -27px;
+  font-size: 12px;
+  z-index: 99;
+  color: #222;
+  vertical-align: middle;
+  &:last-child {
+    font-size: 0.4em;
+  }
+  &-sm {
+    left: 4px;
+    margin-left: -27px;
+    font-size: 10px;
+    z-index: 99;
+    color: #222;
+    vertical-align: middle;
+
+    &:last-child {
+      font-size: 0.5em;
+    }
+  }
+}
+.title {
+  margin-left: -10px;
+  color: #000000;
+}
+$background: #004582;
+$screen:#fff;
+$bezel-color: #222;
+$laptop-body: #030303;
+$display-width:640px;
+$display-height:320px;
+$base-width:100%;
+$base-height:17px;
+
+
+///// MIXINS/////
+@mixin reset {
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , serif;
+
+  }
+
+}
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+@mixin base-background {
+  box-shadow: 1px 1px 10px 0px #333;
+  border-bottom: 3px solid #555;
+  background: #999;
+  background-image: -webkit-linear-gradient(left, #555 0%, #777 50%, #555 100%);
+}
+@mixin cam {
+  :before {
+    content: "";
+    top: -12px;
+    width: 3px;
+    height: 3px;
+    background: #e6e8e7;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@mixin base {
+  &:before {
+    content: "";
+    display: block;
+    border-radius: 0 0 10px 10px;
+    height: 8px;
+    width: 120px;
+    left:50%;
+    position: absolute;
+    background:#999 ;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@mixin editor-dots {
+  .dot {
+    display: inline-block;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    margin:4px;
+    border-radius: 100%;
+    &:first-child {
+      background: #e76d6b;
+    }
+    &:nth-child(2) {
+      background: #dfbc43;
+    }
+    &:nth-child(3) {
+      background: #37d488;
+    }
+  }
+}
+@mixin typing-animation {
+  .css-typing {
+    padding-top: 10px;
+
+  }
+  .text-bio p{
+
+    width: 100%;
+    height: 10%;
+    color: #181818;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+
+  @keyframes type {
+    from {
+      width: 0;
+    }
+  }
+
+  @-webkit-keyframes type {
+    from {
+      width: 0;
+    }
+  }
+
+  span {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    from {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    from {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    from {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    from {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+}
+
+//////////// MAIN CSS /////////////////
+
+@include reset;
+@include google-font("Roboto");
+@include typing-animation;
+
+.display {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  margin: 0 auto;
+
+
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 0 3px #da00ff8c;
+  position: relative;
+  box-sizing: border-box;
+
+}
+.base{
+
+  height:$base-height;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px 2px 25px 25px;
+  @include base-background;
+  @include base;
+
+}
+
+.editor{
+  display: flex;
+  flex:1;
+
+}
+.sidebar{
+  width: 30px;
+  height: 273.5px;
+  background: #777;
+  border-right: 1px solid #666;
+
+
+}
+
+
+

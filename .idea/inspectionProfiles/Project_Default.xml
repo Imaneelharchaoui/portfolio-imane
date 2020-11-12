@@ -1,0 +1,46 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="class" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="22">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="h8" />
+            <item index="7" class="java.lang.String" itemvalue="h00" />
+            <item index="8" class="java.lang.String" itemvalue="h01" />
+            <item index="9" class="java.lang.String" itemvalue="li1" />
+            <item index="10" class="java.lang.String" itemvalue="ul1" />
+            <item index="11" class="java.lang.String" itemvalue="p0" />
+            <item index="12" class="java.lang.String" itemvalue="body1" />
+            <item index="13" class="java.lang.String" itemvalue="import" />
+            <item index="14" class="java.lang.String" itemvalue="from" />
+            <item index="15" class="java.lang.String" itemvalue="body3" />
+            <item index="16" class="java.lang.String" itemvalue="html3" />
+            <item index="17" class="java.lang.String" itemvalue="img0" />
+            <item index="18" class="java.lang.String" itemvalue="h100" />
+            <item index="19" class="java.lang.String" itemvalue="hr1" />
+            <item index="20" class="java.lang.String" itemvalue="hr0" />
+            <item index="21" class="java.lang.String" itemvalue="a3" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

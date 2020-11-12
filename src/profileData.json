@@ -1,0 +1,81 @@
+{
+	"landing": {
+
+
+		"bio": "  Im a Web  and mobile Development Engineer  student at ENSIAS . I love building things !,and i really appreciate teamwork . Im currently looking for a end-of-studies internship where i can contribute to a challenging project and  gain more experience . ",
+
+
+    "facebook": "https://www.facebook.com/imane.elharchaoui.5/",
+    "linkedin": "https://www.linkedin.com/in/imane-elharchaoui-0b839b17b/",
+		"github": "https://github.com/Imaneelharchaoui"
+	},
+	"experience": [
+		{
+				"position": "Web Developer Intern",
+				"organization": "Nokia",
+				"aboutWork": "Responsible for building a web application for Resources\nand Cost Management that facilitate managing projects..",
+				"fromDate": "july 2020",
+				"toDate":   "september 2020"
+		},
+		{
+			"position": "Mobile app developer",
+			"organization": "EPSYTECH",
+			"aboutWork": " Developing a mobile application that helps in managing the consultation of commercial activities indicators.",
+			"fromDate": "July 2019",
+			"toDate":   "august 2019"
+		}
+	],
+
+	"education": [
+		{
+			"university": " National school for computer science (ENSIAS)",
+			"degree": "web engineering and mobile computing",
+
+			"fromDate": "2018",
+			"toDate":   "Present"
+		},
+
+		{
+			"university": " Preparatory classes for schools | CPGE Med 5",
+			"degree": "Technology and Industrial Sciences (Tsi)",
+
+			"fromDate": "2016",
+			"toDate":   "2018"
+		}
+
+	],
+	"skills": [{
+			"name": "HTML"
+		},
+		{
+			"name": "CSS"
+		},
+		{
+			"name": "Javascript"
+		},
+		{
+			"name": "React"
+		},
+		{
+			"name": "Angular"
+		},
+		{
+			"name": "Spring boot"
+		},
+		{
+			"name": "MySQL"
+		}
+
+	],
+	"interests": {
+		"paragraphOne": "Apart from being a web developer, I enjoy most of my time reading interesting articles ,practicing sports watching my favorite tv shows.and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world."
+
+
+	},
+	"extracurricular":  {"paragraphOne": " i was a member the ENACTUS club and a member of the Vintage Club musical cell"}
+
+
+}
+
+
+
