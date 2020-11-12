@@ -3,7 +3,7 @@
 :link: https://imaneelharchaoui.me/
 
 
-<img src="Portimage.PNG" />
+<img src="public/Portimage.PNG"/>
 
 
 
